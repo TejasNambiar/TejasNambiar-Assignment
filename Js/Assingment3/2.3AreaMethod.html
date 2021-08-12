@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Prototype Area Method</title>
+    </head>
+    <body>
+        <p id="demo"></p>
+
+        <script>
+            class Rectangle {
+                constructor(length, breadth) {
+                    this.length = length;
+                    this.breadth = breadth;
+                }
+                get getLength(){
+                    return this.length;
+                }
+                get getWidth(){
+                    return this.breadth;
+                }
+            }
+            var RectObject = new Rectangle(4, 5);
+            document.write("Rectangle<br>Height: "+RectObject.getLength);
+            document.write("<br>Width: "+RectObject.getWidth);
+            
+            // 2nd question 
+            Rectangle.prototype.getArea = function() {
+                return this.length * this.breadth
+            };
+            
+            // 3rd question 
+            Rectangle.prototype.height = 50;
+            document.getElementById("demo").innerHTML =
+            "Rectangle Area: " + RectObject.getArea(); 
+        </script>
+
+    </body>
+</html>

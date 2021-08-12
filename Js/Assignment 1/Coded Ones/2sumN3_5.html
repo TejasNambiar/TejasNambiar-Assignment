@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Sum of N 3,5 multiples</title>
+    </head>
+    <body>
+        <script>
+            var number = parseInt(prompt("enter a numnber: "));
+            var sum = 0;
+            document.write('The sum of natural numbers for n = ',number,' : ');
+            for (i = 1; i <= number; i++) {
+                if(i % 3 == 0 || i % 5 == 0)
+                    sum += i;
+                document.write("<br>updated sum = ",sum," ");
+            }
+            document.write("<br>Final sum = ",sum," ");
+        </script>
+    </body>
+</html>

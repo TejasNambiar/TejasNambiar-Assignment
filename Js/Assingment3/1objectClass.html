@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Rectangle Class Object Manipulation</title>
+    </head>
+    <body>
+        <script>
+            class Rectangle {
+                constructor(height, width) {
+                    this.height = height;
+                    this.width = width;
+                }
+                get getHeight(){
+                    return this.height;
+                }
+                get getWidth(){
+                    return this.width;
+                }
+            }
+            var RectObject = new Rectangle(4, 5);
+            document.write("Rectangle<br>Height: "+RectObject.getHeight);
+            document.write("<br>Width: "+RectObject.getWidth);
+            
+            RectObject = new Rectangle(7, 9);
+
+            document.write("<br><hr>Update Rectangle properties are:<br>Height: "+RectObject.getHeight);
+            document.write("<br>Width: "+RectObject.getWidth);
+            
+        </script>
+    </body>
+</html>

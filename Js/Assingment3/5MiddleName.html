@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Classless Object Manipulation</title>
+    </head>
+    <body>
+        <script>
+            let Name = {
+                First: "Tejas",
+                Last: "Nambiar"
+            };
+            document.write("Name<br>first: "+Name.First);
+            document.write("<br>last: "+Name.Last);
+            
+            Name.Middle = "Rakesh";
+            document.write("<hr>Updated<br>Last: "+Name.Last);
+
+            document.write("<br><hr>Update Rectangle properties are (using for loop): ");
+            for (let prop in Name) {
+                document.write("<br>",prop," : ",Name[prop]);
+            }
+        </script>
+    </body>
+</html>

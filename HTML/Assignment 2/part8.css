@@ -1,0 +1,12 @@
+p{
+    background-color: rgb(179, 233, 255);
+}
+p.p1{
+    border: 5px solid black;
+}
+p.p2{
+    border: 3px solid black;
+}
+p.p3{
+    border: 1px solid black;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursive Map</title>
+</head>
+<body>
+    <script>
+        var arr1 = [1,2,3,4,5];
+        var arr2 = [1,4,9,16,25];
+        var b = new Array(5);
+        var i=0, j=0;
+        map(arr1,squ);
+        map(arr2,squ);
+
+        function map(array1, squ){
+            if(j<arr1.length){
+                b[j] = squ(array1[i]);
+                j++;
+                map(arr1.slice(j,5),squ);
+            }
+            else if(j==arr1.length){
+                document.write("final newArray: "+b+"<br>");
+                j=0;
+            }
+        }
+        function map(array1, sqr){
+            if(j<arr1.length){
+                b[j] = sqr(array1[i]);
+                j++;
+                map(arr1.slice(j,5),squ);
+            }
+            else if(j==arr1.length){
+                document.write("final newArray: "+b+"<br>");
+                j=0;
+            }
+        }
+        function squ(element){
+            return element*element;
+        }
+        function sqr(element){
+            return Math.sqrt(element);
+        }
+    </script>
+</body>
+</html>

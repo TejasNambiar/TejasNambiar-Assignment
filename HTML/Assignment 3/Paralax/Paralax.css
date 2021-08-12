@@ -1,0 +1,78 @@
+html {
+    overflow: hidden;
+}
+body {
+    margin: 0;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    line-height: 1.8m;
+    font-weight: 400;
+    color: white;
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+.one {
+    width: 100vw;
+    height:100vh;
+    padding-top:20vh;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    background-image: url("pic1.jpg");
+    background-size: 100% 100%;
+}
+.two {
+    content:"";
+    width: 100vw;
+    height: 100vh;
+}
+.three {
+    width: 100vw;
+    height:100vh;
+    top:12px;
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url("pic2.jpg");
+    background-size: 100% 100%;
+}
+.content {
+    margin: 0 auto;
+    padding: 50px 80px;
+    width: 50%;
+    background: #aaa;
+    display: block;
+    text-align-last: center;
+    font-weight: 25px;
+    color: aquamarine;
+    
+}
+.content1{
+    margin: 0 auto;
+    padding: 220px 80px;
+    width: 50%;
+    background:transparent;
+    display: block;
+    text-align-last: center;
+    font-weight: 25px;
+    color: white;
+}
+.four{
+    width: 100vw;
+    height: 100vw;
+    background-image: url("pic3.jpeg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.content{
+    margin: auto;
+    padding: 50px;
+    width: 100%;
+    background:rgb(85, 67, 67)
+}

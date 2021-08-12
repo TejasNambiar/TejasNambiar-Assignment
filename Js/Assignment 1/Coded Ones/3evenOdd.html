@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title>Even Odd Parity check</title>
+    </head>
+    <body>
+        <script>
+            var number = parseInt(prompt('Enter a positive integer: '));
+            evenOdd(number);
+
+            function evenOdd(number){
+                if(number % 2 == 0)
+                    document.write('parity(',number,'):--> "even"');
+                else
+                    document.write('parity(',number,'):--> "odd"');
+            }   
+        </script>
+    </body>
+</html>

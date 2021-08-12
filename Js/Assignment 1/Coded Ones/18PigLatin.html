@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Pig Latin Translation</title>
+    </head>
+    <body>
+        <script>
+            var string = prompt("Enter a string: ");
+            document.write("Original text: ",string);
+            document.write("<br>Piglatin text: ",translatePigLatin(string));
+            function translatePigLatin(str) {
+                let vowels = ['a', 'e', 'i', 'o', 'u'];
+                let newStr = "";
+
+                /*
+                    Our if-statement checks if the first letter of the string is a vowel.
+                    We use the indexOf() method to check if the first character exists in 
+                    our vowels array. 
+                    
+                    If it does, we add “way” to the end of the string and
+                    return newStr. If the first character isn’t a vowel then we move on to
+                    our else block. 
+                */
+
+                if (vowels.indexOf(str[0]) > -1) {
+                    newStr = str + "way";
+                    return newStr;
+                } 
+
+                /*
+                    For our firstMatch variable, we use the regular expression method match(). 
+                    What match() does is it returns an array of all the character indexes that
+                    match our regular expression pattern. Our pattern looks at any character 
+                    that is a vowel. If there are no vowels, then we assign firstMatch the value of 0.
+                    
+                    The vowel variable will give us the index of the first vowel found in the string
+                    using indexOf(). Since match() gives us an array, we only care about the first item 
+                    in the array. Once again if firstMatch is 0, the vowel variable doesn’t matter.
+                */
+
+                else {
+                    let firstMatch = str.match(/[aeiou]/g) || 0;
+                    let vowel = str.indexOf(firstMatch[0]);
+                    newStr = str.substring(vowel) + str.substring(0, vowel) + "ay";
+                    return newStr;
+                }
+
+                /*
+                    Now that we have the index of the first occurring vowel, we use that number as a start value 
+                    argument for our substring() method.
+                    The str.substring(vowel) represents the section of the string without the consonant beginning.
+                    
+                    The str.substring(0, vowel) represents the consonant or the consonant cluster. When we 
+                    concatenate both strings together and slap on an “ay” at the end, we have our Pig Latin string.
+                    If the string doesn’t have a vowel, str.substring(vowel) will just return the entire string. 
+                   
+                    The str.substring(0, vowel) will return nothing because substring(0,0) is nothing. In the end,
+                    we end up slapping the “ay” at the end of the original string.
+                    We can now return that string.
+                */
+            }
+        </script>
+    </body>
+</html>

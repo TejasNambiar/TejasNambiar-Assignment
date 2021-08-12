@@ -1,0 +1,7 @@
+table, tr, td{
+    border: 1px solid green;
+}
+.row{
+    color: white;
+    background-color: green;
+}

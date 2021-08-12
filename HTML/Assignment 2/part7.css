@@ -1,0 +1,8 @@
+div{
+    border: 1px solid orange;
+    outline:  5px dotted rgb(162, 253, 16);
+    padding: 2px solid skyblue;
+}
+p{
+    color: rgb(162, 253, 16);
+}

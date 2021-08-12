@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <title>Sum of N numbers</title>
+    </head>
+    <body>
+        <script>
+            var number =prompt('Enter multiple integer string: ');
+            number = number.split(" ");
+            var array = new Array();
+            for (i = 0; i < number.length; i++) {
+                array[i] = parseInt(number[i]);
+            }
+
+            var sum = 0, i =0;
+
+            document.write("Sum of : <br> For Loop: ",For(sum, i,array));
+            document.write("<br> While Loop: ",While(sum, i,array));
+            document.write("<br> Do While Loop: ",DoWhile(sum, i,array));
+            
+            function For(sum, i, array){
+                for (i; i < array.length; i++) {
+                    sum += array[i];
+                }
+                return sum;
+            }
+
+            function While(sum, i, array){
+                while(i<array.length){
+                    sum += array[i];
+                    i++;
+                }
+                return sum;
+            }
+
+            function DoWhile(sum, i, array){
+                do{
+                    sum += array[i];
+                    i++;
+                }while(i<array.length)
+                return sum;
+            }
+
+        </script>
+    </body>
+</html>

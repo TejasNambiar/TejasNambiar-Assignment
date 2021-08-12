@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Probability of Heads</title>
+    </head>
+    <body>
+        <script>
+            var flip = parseInt(prompt('Enter number of flips: '));
+            document.write(flipProbability(flip));
+
+            function flipProbability(flips){
+                var sumHeads =0;
+                for(i=0; i<flips;i++){
+                    var toss = Math.random() * 1;
+                    document.writeln(Math.round(toss),": toss<br>");
+                    if(Math.round(toss) == 1)
+                        sumHeads+=1;
+                }
+                document.writeln("Sum: "+sumHeads,"<br>");
+                return sumHeads/10;
+            }   
+        </script>
+    </body>
+</html>

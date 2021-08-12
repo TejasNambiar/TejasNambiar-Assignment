@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <title>Pizza Page</title>
+        <link rel="styleSheet" href="pizza.css">
+    </head>
+    <body>
+        <div>
+            <form id="pizzaForm" method="GET">
+                <div class="inputInfo">
+                    <div id="custInfo">
+                        <strong>Order Details </strong><hr>
+                        <label for="name" >Name</label>
+                        <input type="text" name="name" required><br>
+                        <label for="email" >Email</label>
+                        <input type="email" name="email" required><br>
+                    </div>
+                    <div id="compInfo">
+                        This is Dominos! We give the best pizza's, 
+                        with the best selections, for the best prices.
+                    </div>
+                </div>
+                <br>
+                <div class="toppings">
+                    <label for="topings"><strong>Toppings options</strong><br><hr></label>
+                    <input type="checkbox" name="topings" value="cheese"> cheese
+                    <input type="checkbox" name="topings" value="onions"> onions
+                    <input type="checkbox" name="topings" value="tomatoes"> tomatoes
+                    <input type="checkbox" name="topings" value="olives"> olives
+                    <input type="checkbox" name="topings" value="corn">corn 
+                    <input type="checkbox" name="topings" value="mixed">all mix
+                </div>
+                <br>
+                <div class="delivery">
+                    <label for="medium"><strong>Delivery Medium</strong><br><hr></label>
+                    <input type="radio" name="medium" checked>home 
+                    <input type="radio" name="medium">pick-up
+                </div>
+                <br>
+                <div class="tip-info">
+                    <label for="tip"><strong>Tip:</strong><br><hr></label>
+                    <select id="tip" name="tip">
+                        <option value="15%">15%</option>
+                        <option value="20%">20%</option>
+                        <option value="25%">25%</option>
+                    </select>
+                </div>
+                <div class="address">
+                    <label for="address"><strong>Address:</strong><br><hr></label>
+                    <textarea name="address" id="bio" cols="30" rows="10" placeholder="address to deliver to" required></textarea>
+                </div>
+                <button type="reset" id="reset">Reset</button>
+                <button  type="submit" onclick="deliverPizza()">Submit</button>
+                <!--<button id="summary" onclick="summary()">Summary</button>-->
+                <div>
+                    <p id="name1"></p>
+                    <p id="email-table"></p>
+                    <p id="topings-table"></p>
+                    <p id="medium-table"></p>
+                    <p id="tip-table"></p>
+                    <p id="address-table"></p>
+                </div>
+            </form>
+        </div>
+        <script src="pizza.js"></script>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>Map method trying manually</title>
+    </head>
+    <html>
+        <script>
+            var array1 = prompt("Enter array1 spaced string ");
+            var array2 = prompt("Enter array2 spaced string ");
+            array1 = array1.split(" ");
+            array2 = array2.split(" ");
+            for(var i=0;i<array1.length;i++)
+                array1[i] = parseInt(array1[i]);
+            
+            for(var i=0;i<array2.length;i++)
+                array2[i] = parseInt(array2[i]);
+            
+            map(array1, squ);
+            map(array2,sqr);
+            //document.write("Array: "+array1+" ----> Squared Array: "+map(array1, squ));
+            //1 2document.write("<br>Array: "+array2+" ----> Square Root Array: "+map(array2,sqr));
+            
+                
+            function map(array1, sqr){
+                var newArray = new Array();
+                for(i=0;i<array2.length;i++){
+                        newArray[i] = sqr(array2[i]);
+                }
+                document.write(newArray.toString(),"<br>");
+            }
+            function map(array1, squ){
+                var newArray = new Array();
+                for(i=0;i<array1.length;i++){
+                    newArray[i] = squ(array1[i]);
+                }
+                document.write(newArray.toString(),"<br>");
+            }
+
+            function squ(element){
+                return element*element;
+            }
+            function sqr(element){
+                return Math.sqrt(element);
+            }
+            /*
+                document.write("Array: "+array1+" ----> Squared Array: "+find_squares(array1));
+                document.write("<br>Array: "+array2+" ----> Square Root Array: "+find_sqrroot(array2));
+                
+                function find_squares(a){
+                    var newArray = [];
+                    for(i=0;i<a.length;i++){   
+                        var bool=a[i]*a[i];
+                        newArray.push(bool);
+                        //document.write("<br>The squares of numbers are:  "+bool+" & updated newArray: "+newArray.toString()); 
+                    }
+                    return newArray;
+                }
+                function find_sqrroot(b){
+                    var newArray = [];
+                    for(i=0;i<b.length;i++){
+                        var bool=Math.sqrt(b[i]);
+                        newArray.push(bool);
+                        //document.write("<br>The square roots of numbers are:  "+boo+" & updated newArray: "+newArray.toString()); 
+                    }
+                    return newArray;
+                }
+            */
+        
+        </script>
+    </html>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursive even-array slice chec</title>
+</head>
+<body>
+    <script>
+        var arr1 = [1,3,5,4,2];
+        var i=0, j=1;
+        find(arr1, isEven);
+
+        function find(arr, isEven){
+            if(isEven(arr[i]))
+                document.write("value: ",arr[i],"<br>");
+            else{
+                find(arr.slice(j,5),isEven);
+                j++;
+            }
+        }
+        function isEven(number){
+            return (number%2==0);
+        }
+    </script>
+</body>
+</html>

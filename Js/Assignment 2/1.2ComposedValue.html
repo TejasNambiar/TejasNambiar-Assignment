@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>COmposed Value Embedded Functions</title>
+    </head>
+    <html>
+        <script>
+            /*
+                var x_1=window.prompt("enter a number");
+                function square_1(x_1){
+                    return x_1*x_1;
+                }
+                function double_1(x_1){
+                    return x_1*2;
+                }
+                function composedValue(){
+                document.write("The value of compose(square,double) is  "+square_1(double_1(x_1)));
+                document.write("<br>The value of compose(double,square) is  "+double_1(square_1(x_1)));
+                }
+                composedValue();
+            */
+           const composedValue = (f1,f2) => (data) => f1(f2(data));
+           
+           const square = (num) => {
+               return num *num;
+           }
+           const double = (num) => {
+               return num * 2;
+           }
+
+           const getNumber1 = composedValue(square, double);
+           const getNumber2 = composedValue(double, square);
+            var x_1=window.prompt("enter a number");
+            document.write("The value of compose(square,double) is  "+getNumber1(x_1));
+            document.write("<br>The value of compose(double, square) is  "+getNumber2(x_1));
+        </script>
+    </html>
+</html>

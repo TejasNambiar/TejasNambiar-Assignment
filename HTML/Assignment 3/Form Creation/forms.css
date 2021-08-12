@@ -1,0 +1,88 @@
+#content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(100px,auto);
+    grid-gap: 10px;
+    max-width: 960px;
+    margin: 0 auto;
+    grid-template-areas: 
+    "header header header header"
+    "section section section section"
+    "main main aside aside"
+    "main main aside aside"
+    "main main aside aside"
+    "footer footer footer footer"
+}
+
+#content >*{
+background: black;
+padding: 30px;
+color: white;
+}
+#section{
+    display: grid;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+aside{
+    grid-area: aside;
+}
+section{
+    grid-area: section;
+}
+nav{
+    grid-area: nav;
+}
+footer{
+    grid-area: footer;
+}
+#div1{
+    grid-area: aside1;
+}
+
+#div2{
+    grid-area: aside2;
+}
+#nested{
+    display: grid;
+    grid-template-areas: 
+    "aside1 aside1 aside2 aside2"
+}
+#div2 img{
+    width: 200px;
+}
+footer{
+    text-align: center;
+    font-size: medium;
+}
+section h1{
+    color:white;
+    border: 5px solid white;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 30px;
+    text-align: center;
+}
+section{
+    text-align: center;
+}
+aside img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+button{
+    border-radius: 30px;
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 4px;
+}
+button:hover{
+    background-color: gray;
+}

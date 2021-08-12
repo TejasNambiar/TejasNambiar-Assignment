@@ -1,0 +1,86 @@
+body{
+    
+    font-size: 20px;
+}
+.two .header3{
+    text-align: center;
+}
+.two img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 600px;
+}
+.header1 span{
+    font-family: Garamond;
+}
+h1{
+    font-family: Georgia;
+    font-weight: 510;
+}
+.one p{
+    font-weight: 500;
+}
+#content{
+    display: grid;
+    /* 6 rows 2columns*/
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows:repeat(10, minmax(150px,auto));
+    grid-column-gap: 5px;
+	grid-row-gap: 5px;
+}
+#content div{
+    background: #3bbced;
+    padding: 30px;
+}
+#content div:nth-child(even){
+    background: lightgray;
+}
+.one{
+    grid-row:1/3 ;
+
+}
+.two{
+    grid-column: 2;
+    grid-row: 1/4;
+}
+.nested{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    grid-column:span 2;
+    grid-column-gap: 5px;
+	grid-row-gap: 5px;
+    font-size: 20px;
+}
+.three{
+    grid-row: 3/8;
+}
+.four{
+    grid-column: 2;
+    grid-row: 4/8;
+}
+.five{
+    grid-row: 8;
+    grid-column:1/3;
+}
+a{
+    color: blue;
+}
+a:hover{
+    color: red;
+}
+a:visited{
+    color:purple
+}
+footer .para2{
+    text-align: center;
+    font-family: Garamond;
+    font-weight: 600;
+}
+footer .para1{
+    text-align: center;
+    font-family: Garamond;
+    font-weight: 600;
+}

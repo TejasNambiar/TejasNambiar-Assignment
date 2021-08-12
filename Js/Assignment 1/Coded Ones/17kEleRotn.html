@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Kth Element Rotatation</title>
+    </head>
+    <body>
+        <script>
+            var array = prompt("Enter a string i.e space seperated");
+            var number = parseInt(prompt("Enter no. rotations"));
+            array = array.split(" ");
+            document.write("Updated array: ",array);
+            while(number > 0){
+                array.push(array[0]);
+                array.shift();
+                document.write("<br>Updated array: ",array);
+                number--;
+            }
+            document.write("<br>Final array: ",array);
+        </script>
+    </body>
+</html>

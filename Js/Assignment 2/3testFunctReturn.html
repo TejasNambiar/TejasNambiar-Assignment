@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <title>Return Array that Passed Function Test</title>
+    </head>
+    <html>
+        <script>
+            var array=window.prompt("enter a spaced string");
+            array = array.split(" ");
+            document.write("The first value of array to pass test in function is: "+testFunction(array));
+            
+            function testFunction(array){
+                for(i=0; i<array.length;i++){
+                    if(parseInt(array[i]) % 2 == 0)
+                        return array[i];
+                }
+                return -1;
+            } 
+        </script>
+    </html>
+</html>

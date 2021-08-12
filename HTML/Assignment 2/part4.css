@@ -1,0 +1,12 @@
+body{
+    background-color: lightblue;
+}
+a:visited{
+    color: red;
+}
+a{
+    color:yellow;
+}
+a:hover{
+    color: navy;
+}

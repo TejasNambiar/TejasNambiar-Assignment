@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Sum of N numbers</title>
+    </head>
+    <body>
+        <script>
+            var year = parseInt(prompt('Enter year'));
+            var count = 0;
+            document.write("20 leap years from ",year," are: ");
+            while (count < 20) {
+            if (year % 4 == 0) {
+                if (year % 100 != 0 || year % 400 == 0) {
+                ++count;
+                document.write(year," ");
+                }
+            }
+            ++year;
+            }
+        </script>
+    </body>
+</html>
