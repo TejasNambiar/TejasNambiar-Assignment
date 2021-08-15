@@ -61,14 +61,14 @@ body {
     box-sizing: border-box;
 }
 .content{
-    margin: auto;
-    padding: 60px;
-    width: 100%;
+    margin: auto ;
+    padding: 60px 10px;
     background:rgb(85, 67, 67);
     display: block;
     text-align-last: center;
     font-weight: 25px;
     color: aquamarine;
+    box-sizing: border-box;
 }
 .content2{
     margin: auto;
@@ -100,9 +100,11 @@ footer{
     }
     .content{
         margin: auto;
-        padding: 43px;
+        padding: 43px 12px;
         width: 100%;
         background:rgb(85, 67, 67);
+        box-sizing: border-box;
+        text-align: center;
     }
     .content1 p{
         font-size: 31px;
