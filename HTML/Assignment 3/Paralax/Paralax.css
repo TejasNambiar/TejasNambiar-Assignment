@@ -69,10 +69,19 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    box-sizing: border-box;
 }
 .content{
     margin: auto;
     padding: 50px;
     width: 100%;
     background:rgb(85, 67, 67)
+}
+footer{
+    color: whitesmoke;
+    background: black;
+    box-sizing: border-box;
+    padding: 10px 100px;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
