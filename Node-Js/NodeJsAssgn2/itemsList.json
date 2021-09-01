@@ -1,0 +1,24 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "product": "Milk"
+        },
+        {
+            "id": 2,
+            "product": "Butter"
+        },
+        {
+            "id": 3,
+            "product": "Curd"
+        },
+        {
+            "id": 4,
+            "product": "Panner"
+        },
+        {
+            "id": 5,
+            "product": "Chilli"
+        }
+    ]
+}
