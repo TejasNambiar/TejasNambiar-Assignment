@@ -1,9 +1,9 @@
-package removeIf;
+package replaceAllLambda;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class RemoveIf {
+public class ReplaceAll {
 
 	public static void main(String[] args) {
 		List<String> list = new ArrayList<>();
@@ -15,12 +15,12 @@ public class RemoveIf {
 		list.add("Tokyo");
 		list.add("Manchester");
 		
-		list.removeIf(element -> element.length()%2 !=0);
+		list.replaceAll(element -> element.toUpperCase());
 		
 		for (String string : list) {
 			System.out.println(string);
 		}
-		
+
 	}
-	
+
 }
