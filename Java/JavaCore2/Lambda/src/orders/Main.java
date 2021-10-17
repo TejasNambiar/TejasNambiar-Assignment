@@ -27,7 +27,7 @@ public class Main {
 	private static void printOrders(List<Orders> list, Predicate<Orders> condition, Consumer<Orders> consumer) {
 
 		for (Orders orders : list) {
-			if(condition.test(orders))
+			if(condition.test(orders)) // true
 				consumer.accept(orders);
 		}
 		

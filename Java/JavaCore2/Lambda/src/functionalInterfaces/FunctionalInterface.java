@@ -22,7 +22,6 @@ public class FunctionalInterface {
         /**
          * Suppliers are useful when we don’t need to supply any value 
          * and obtain a result at the same time.
-		 * @params1 - input type
          */
         Supplier<Double> interface2 = () -> Math.random();
         
@@ -38,8 +37,11 @@ public class FunctionalInterface {
         Predicate<Integer> lesserthan = i -> (i < 18); 
         
         // Calling Predicate method to check if number provided is smaller than threshold
-        System.out.println(lesserthan.test(10));
-        
+        if(lesserthan.test(19))
+        	System.out.println("executed");
+        else {
+			System.out.println("failed");
+		}
         /**
          * The lambda expression assigned to an object of Consumer 
          * type is used to define its accept() which eventually applies 
@@ -47,10 +49,10 @@ public class FunctionalInterface {
          * Consumers are useful when it not needed to return any
          * value as they are expected to operate via side-effects. 
          */
-        Consumer<Integer> display = a -> System.out.println(a);
+        Consumer<String> display = a -> System.out.println(a);
         
         // Implement display using accept()
-        display.accept(10);
+        display.accept("Java is  __tough but interesting__ ");
 
 	}
 

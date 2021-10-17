@@ -5,7 +5,7 @@ import java.util.List;
 
 public class RemoveIf {
 
-	public static void main(String[] args) {
+	public static void main(String[] args){
 		List<String> list = new ArrayList<>();
 		list.add("Brussels");
 		list.add("Paris");
