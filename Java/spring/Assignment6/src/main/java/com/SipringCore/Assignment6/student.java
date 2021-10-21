@@ -10,6 +10,7 @@ public class student {
 
 	@Value("${user.Name}")
 	private String name;
+	@Value("${user.id}")
 	private long regNo;
 
 	public student() {
