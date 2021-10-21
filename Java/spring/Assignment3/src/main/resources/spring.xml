@@ -1,0 +1,40 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop 
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+    
+    <bean id="controller" class="com.SipringCore.Assignment3.BankAccountController" autowire="byName"/>
+	
+	<bean id="bankServ" class="com.SipringCore.Assignment3.BankAccountServiceImpl" autowire="byName"/>
+
+    <bean id="bankRepo" class="com.SipringCore.Assignment3.BankAccountRepositoryImpl" autowire="byName"/>
+    
+    <bean id="account1" class="com.SipringCore.Assignment3.BankAccount">
+    	<property name="accountId" value="125"/>
+    	<property name="accountHolderName" value="Tony"/>
+    	<property name="accountType" value="Savings"/>
+    	<property name="accountBalance" value="1697000"/>
+    </bean>
+    
+    <bean id="account2" class="com.SipringCore.Assignment3.BankAccount">
+    	<property name="accountId" value="450"/>
+    	<property name="accountHolderName" value="Steve"/>
+    	<property name="accountType" value="Current"/>
+    	<property name="accountBalance" value="8500000"/>
+    </bean>
+    
+    <bean id="account3" class="com.SipringCore.Assignment3.BankAccount">
+    	<property name="accountId" value="965"/>
+    	<property name="accountHolderName" value="Thor"/>
+    	<property name="accountType" value="Savings"/>
+    	<property name="accountBalance" value="7882000"/>
+    </bean>
+    
+       
+    
+</beans>
