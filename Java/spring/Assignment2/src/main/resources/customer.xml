@@ -1,0 +1,57 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop 
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+    <bean id="questions" class="com.SipringCore.Assignment2.questions">
+    <property name="questionId" value="1"></property>
+    <property name="question" value="who are the last 3 CM's of Ap?"></property>
+    <property name="l">
+    	<list>
+    		<ref bean="l1"/>
+    		<ref bean="l2"/>
+    		<ref bean="l3"/>
+    	</list>
+    </property>
+    
+   
+    <property name="s">
+    	<set>
+    		<ref bean="s1"/>
+    		<ref bean="s2"/>
+    		<ref bean="s3"/>
+    	</set>
+    </property>
+    <property name="m">
+            <map>
+                <entry key="1" value="RajaMouli" />
+                <entry key="2" value="Steven Spielberg" />
+                <entry key="3" value="Martin Scorsese" />
+                <entry key="4" value="Alfred Hitchcock" />
+            </map>
+      </property>
+    </bean>
+    <bean id="l1" class="com.SipringCore.Assignment2.ListAnswers">
+    	<property name="listanswers" value="Y.S.Jagan(2019-present)"></property>
+    </bean>
+    <bean id="l2" class="com.SipringCore.Assignment2.ListAnswers">
+    	<property name="listanswers" value="N.Chandra Babu Naidu(2014-2019)"></property>
+    </bean>
+    <bean id="l3" class="com.SipringCore.Assignment2.ListAnswers">
+    	<property name="listanswers" value="N.Kiran kumar Reddy(2010-2014)"></property>
+    </bean>
+    <bean id="s1" class="com.SipringCore.Assignment2.SetAnswers">
+    	<property name="setanswers" value="Y.S.Jagan(2019-prasent)"></property>
+    </bean>
+    <bean id="s2" class="com.SipringCore.Assignment2.SetAnswers">
+    	<property name="setanswers" value="N.Chandra Babu Naidu(2014-2019)"></property>
+    </bean>
+    <bean id="s3" class="com.SipringCore.Assignment2.SetAnswers">
+    	<property name="setanswers" value="N.Kiran kumar Reddy(2010-2014)"></property>
+    </bean>
+</beans>
+
