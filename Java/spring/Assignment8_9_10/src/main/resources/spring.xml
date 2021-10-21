@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:mvc="http://www.springframework.org/schema/mvc"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans 
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context 
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd" >  
+	
+	
+	
+	<bean id="s1" class="com.SipringCore.Assignment8_9_10.Question_9">
+	    <constructor-arg  value="Naveen"></constructor-arg> 
+	    <constructor-arg  value="121003100"></constructor-arg> 
+	    <constructor-arg  value="IT"></constructor-arg> 
+    </bean>
+
+    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
+    <bean id="s3" class="com.SipringCore.Assignment8_9_10.Question_8_10">
+	    <constructor-arg  value="deepika"></constructor-arg> 
+	    <constructor-arg  value="121004356"></constructor-arg> 
+	    <constructor-arg  value="CIVIL"></constructor-arg> 
+    </bean>
+</beans>
